@@ -16,6 +16,7 @@ router.get('/', async function (req, res, next) {
       error: error.message
     });
   }
+    res.render('index')
 });
 
 
