@@ -4,10 +4,6 @@ const DATA = require('../model/data')
 
 /* GET home page. */
 
-router.get('/', async function(req, res, next) {
-  res.render('index')
- });
-
 router.get('/', async function (req, res, next) {
   try {
     const allResumeData = await DATA.find();
@@ -20,7 +16,6 @@ router.get('/', async function (req, res, next) {
       error: error.message
     });
   }
-    res.render('index')
 });
 
 
